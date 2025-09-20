@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator with Navigation & Hero Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-calculator"></i>
+                <span>CalcPro</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Scientific</a></li>
+                <li><a href="#">Converter</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">The Ultimate Calculator Experience</h1>
+            <p class="hero-subtitle">Perform calculations with ease using our powerful and intuitive calculator. Perfect for students, professionals, and everyday use.</p>
+            
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast</h3>
+                    <p>Lightning quick calculations</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h3>Reliable</h3>
+                    <p>Accurate results every time</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-keyboard"></i>
+                    <h3>Keyboard Support</h3>
+                    <p>Full keyboard accessibility</p>
+                </div>
+            </div>
+            
+            <a href="#calculator" class="cta-button">Try Calculator Now</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="calculator">
+        <div class="calculator-container">
+            <h2 class="section-title">Calculator</h2>
+            <div class="calculator">
+                <div class="calc-header">
+                    <div class="calc-title">CALCULATOR</div>
+                    <div class="keyboard-hint">
+                        <i class="fas fa-keyboard"></i>
+                        <span id="keyboardHint">Press F1 for help</span>
+                    </div>
+                </div>
+                
+                <div class="display">
+                    <div class="previous-operand" id="previousOperand"></div>
+                    <div class="current-operand" id="currentOperand">0</div>
+                </div>
+                
+                <div class="buttons">
+                    <button class="clear span-two">AC</button>
+                    <button class="delete">DEL</button>
+                    <button class="operator" data-operation="÷">÷</button>
+                    <button class="number" data-number="7">7</button>
+                    <button class="number" data-number="8">8</button>
+                    <button class="number" data-number="9">9</button>
+                    <button class="operator" data-operation="×">×</button>
+                    <button class="number" data-number="4">4</button>
+                    <button class="number" data-number="5">5</button>
+                    <button class="number" data-number="6">6</button>
+                    <button class="operator" data-operation="-">−</button>
+                    <button class="number" data-number="1">1</button>
+                    <button class="number" data-number="2">2</button>
+                    <button class="number" data-number="3">3</button>
+                    <button class="operator" data-operation="+">+</button>
+                    <button class="number" data-number="0">0</button>
+                    <button class="number" data-number=".">.</button>
+                    <button class="equals">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 CalcPro Calculator. All rights reserved.</p>
+    </footer>
+
+    <!-- Keyboard help modal -->
+    <div class="keyboard-help" id="keyboardHelp">
+        <div class="keyboard-help-content">
+            <h2>Keyboard Shortcuts</h2>
+            <div class="keyboard-shortcuts">
+                <div class="shortcut">
+                    <span>Numbers</span>
+                    <span class="key">0-9</span>
+                </div>
+                <div class="shortcut">
+                    <span>Decimal Point</span>
+                    <span class="key">.</span>
+                </div>
+                <div class="shortcut">
+                    <span>Add</span>
+                    <span class="key">+</span>
+                </div>
+                <div class="shortcut">
+                    <span>Subtract</span>
+                    <span class="key">-</span>
+                </div>
+                <div class="shortcut">
+                    <span>Multiply</span>
+                    <span class="key">*</span>
+                </div>
+                <div class="shortcut">
+                    <span>Divide</span>
+                    <span class="key">/</span>
+                </div>
+                <div class="shortcut">
+                    <span>Equals</span>
+                    <span class="key">Enter or =</span>
+                </div>
+                <div class="shortcut">
+                    <span>Clear</span>
+                    <span class="key">Escape</span>
+                </div>
+                <div class="shortcut">
+                    <span>Delete</span>
+                    <span class="key">Backspace</span>
+                </div>
+            </div>
+            <button class="close-help" id="closeHelp">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
